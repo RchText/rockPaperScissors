@@ -89,6 +89,16 @@
                 playRound(playerChoice, computerChoice);
                 console.log(`Player ${score[0]}, Computer ${score[1]}, Ties ${score[2]}. `)
             }
+
+            if (score[0] > score[1]) {
+                console.log("The Player Wins!!")
+            }
+            else if (score[0] < score[1]) {
+                console.log("The Computer Wins!!")
+            }
+            else {
+                console.log("It's a tie game!")
+            }
             
         }
 
